@@ -1,0 +1,25 @@
+---
+version: "3.7"
+
+
+services:
+  vhserver:
+    network_mode: host
+    image: "nosklo/valheim-base"
+    build: 
+      context: .
+      dockerfile: valheim.Dockerfile
+#    environment:
+#      NAME: New Server Name
+#      WORLD: ServerWorldFilename
+#      PASSWORD: nopassword
+#      SAVEDIR: /vhsave
+#      PUBLIC: 0
+#      PORT: 2456
+    ports:
+      - "2456-2457:2456-2457/udp"
+    volumes:
+      - "gameserver:/vhsave"
+
+volumes:
+  gameserver:
