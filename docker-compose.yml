@@ -9,10 +9,10 @@ services:
     build: 
       context: .
       dockerfile: valheim.Dockerfile
-#    environment:
-#      NAME: New Server Name
+    environment:
+      NAME: $VALHEIM_SERVER_NAME
 #      WORLD: ServerWorldFilename
-#      PASSWORD: nopassword
+      PASSWORD: $VALHEIM_SERVER_PASSWORD
 #      SAVEDIR: /vhsave
 #      PUBLIC: 0
 #      PORT: 2456
