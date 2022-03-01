@@ -20,15 +20,16 @@ run it:
 
 you can use environment variables to change the defaults:
 
-PUBLIC=0               # 0 private / 1 public
-PORT=2456              # The port that you want valheim server to listen 
-NAME="Docker Valheim"  # Your amazing name of your server.
-WORLD=Docker           # Your unique name of your world.
-SAVEDIR=/vhsave        # Where to save your data.
-PASSWORD=nopassword
+    PUBLIC=0               # 0 private / 1 public
+    PORT=2456              # The port that you want valheim server to listen 
+    NAME="Docker Valheim"  # Your amazing name of your server.
+    WORLD=Docker           # Your unique name of your world.
+    SAVEDIR=/vhsave        # Where to save your data.
+    PASSWORD=nopassword
 
 
 ## Thanks to those projects for making it possible:
+
 - [box86](https://github.com/ptitSeb/box86)
 - [box64](https://github.com/ptitSeb/box64)
 - [docker](docker.com)
