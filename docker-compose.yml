@@ -5,14 +5,14 @@ version: "3.7"
 services:
   vhserver:
     network_mode: host
-    image: "nosklo/valheim-base"
+    image: "nosklo/varmheim"
     build: 
       context: .
       dockerfile: valheim.Dockerfile
-    environment:
-      NAME: $VALHEIM_SERVER_NAME
+#    environment:
+#      NAME: Docker Server
 #      WORLD: ServerWorldFilename
-      PASSWORD: $VALHEIM_SERVER_PASSWORD
+#      PASSWORD: nopassword
 #      SAVEDIR: /vhsave
 #      PUBLIC: 0
 #      PORT: 2456

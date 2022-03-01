@@ -56,4 +56,4 @@ RUN git clone https://github.com/ptitSeb/box64 \
 EXPOSE 2456-2457/udp
 WORKDIR /root
 COPY bootstrap .
-CMD ["/root/bootstrap"]
+ENTRYPOINT ["/bin/bash", "/root/bootstrap"]
